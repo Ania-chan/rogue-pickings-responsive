@@ -1,0 +1,299 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html {
+    font-size:18px;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+/*Logo & Navigation*/
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	height: 80px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+  padding: 0 30px;
+}
+
+header h1 {
+	font-size: 1.875em;
+	text-align: center;
+	width: auto;
+	padding: 20px 0;
+	text-transform: uppercase;
+  margin: 0;
+}
+
+header span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 16px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 0;
+	color:#77a466;
+	display: block;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*Top Section*/
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.main-image {
+	width: 100%;
+	height: auto;
+}
+
+.main-image img {
+	width: 100%;
+  margin-top: 15px;
+	border-bottom: 3px solid #77a466;
+  border-top: 3px solid #77a466;
+}
+
+.main-title {
+	width: 100%;
+	height: auto;
+}
+
+.main-title p {
+	line-height: 1.5625em;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.main-title h3 {
+	text-align: left;
+	text-transform: uppercase;
+	color: #77a466;
+	padding: 0 10px;
+}
+
+p {
+	padding: 0;
+	text-align: left;
+  margin-right: 5px;
+}
+
+/*Bottom Section*/
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	text-align: left;
+  padding: 0 10px;
+	border-top: 1px solid #eee;
+}
+
+.section-one,
+.section-two {
+	border-right: 1px solid #eee;
+}
+
+.menu {
+	list-style: none;
+	padding: 0px;
+}
+
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+	font-weight: 400;
+}
+
+.reviews {
+	color: #333;
+	line-height: 21px;
+}
+
+.address {
+	line-height: 1.5em;
+}
+
+/*Footer*/
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+
+footer span {
+	font-family: "Wisdom Script", script;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.2em;
+}
+
+h4 {
+	color: black;
+	text-transform: uppercase;
+}
+
+footer p {
+	padding: 0px 30px;
+	line-height: 21px;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+  .container {
+    nargin: 0 auto;
+  }
+
+  header nav {
+    padding: 0;
+  }
+
+	header nav ul {
+		padding: 20px 0px;
+		text-align: center;
+	}
+
+	header nav ul li a {
+	 display: block;
+	 width: auto;
+	 padding-right: 15px;
+	}
+
+  .section-one, .section-two, .section-three {
+    width: 28%;
+    float: left;
+    display: block;
+    margin: 0 10px;
+  }
+
+  .main-title {
+    margin: 0;
+  }
+
+  .main-title p {
+    margin: 0 15px 20px 0;
+  }
+}
+
+@media all and (min-width:940px) {
+    /* Desktop styles here */
+
+    header {
+      border-bottom: none;
+    }
+
+    header h1 {
+      float: left;
+      margin: 10px 10px;
+    }
+
+    header nav ul{
+      float: right;
+      padding: 20px 0;
+      display: inline;
+      margin-top: 15px;
+
+    }
+
+    header nav ul li {
+     display: block;
+     float: left;
+     width: auto;
+    }
+
+    header nav ul li a {
+     text-transform: uppercase;
+     padding-right: 15px;
+    }
+
+    header h1 {
+		text-align: left;
+		padding: 20px 0;
+  	}
+
+    .top-section {
+      clear: both;
+      border-bottom: 1px solid #eee;
+    }
+
+  	.main-title h3 {
+  	text-align: left;
+  	}
+
+  	.main-title p {
+    text-align: left;
+  	padding: 0 10px;
+  	}
+
+  	.section-one,
+  	.section-two,
+  	.section-three {
+    	float: left;
+      border-top: none;
+      padding-right: 31px;
+    }
+
+    footer {
+      border-top: 1px solid #eee;;
+    }
